@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrum敏捷开发 - 学习与实践平台</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
+    <!-- 导航栏 -->
+    <nav class="navbar bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl">
+                    <span class="text-primary">Scrum</span>学习平台
+                </a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#learn">学习Scrum</a></li>
+                    <li><a href="#tools">实践工具</a></li>
+                    <li><a href="#community">社区</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <div class="hero min-h-[70vh] bg-base-200">
+        <div class="hero-content text-center">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl font-bold mb-8 text-primary">
+                    掌握Scrum，提升团队效能
+                </h1>
+                <p class="py-6 text-lg text-gray-600">
+                    从入门到精通，我们提供完整的Scrum学习路径、实践工具和专业社区支持，
+                    帮助个人和团队更好地实施敏捷开发方法。
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <button class="btn btn-primary" onclick="document.getElementById('learn').scrollIntoView({behavior: 'smooth'})">
+                        开始学习
+                    </button>
+                    <button class="btn btn-outline" onclick="document.getElementById('tools').scrollIntoView({behavior: 'smooth'})">
+                        查看工具
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 特色功能 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">为什么选择我们的平台？</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-base-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="card-body">
+                        <div class="text-4xl mb-4">📚</div>
+                        <h3 class="card-title">系统化学习</h3>
+                        <p>从基础概念到高级实践，提供完整的学习路径和丰富的教学资源。</p>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="card-body">
+                        <div class="text-4xl mb-4">🛠️</div>
+                        <h3 class="card-title">实用工具</h3>
+                        <p>提供Sprint规划、看板、燃尽图等实用工具，支持团队实践。</p>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="card-body">
+                        <div class="text-4xl mb-4">👥</div>
+                        <h3 class="card-title">专业社区</h3>
+                        <p>连接Scrum实践者，分享经验，解答疑惑，共同成长。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学习路径 -->
+    <section id="learn" class="py-16 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">学习路径</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card bg-white shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <span class="text-primary">01</span>
+                            基础入门
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Scrum基本概念</li>
+                            <li>角色和职责</li>
+                            <li>工件和活动</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <span class="text-primary">02</span>
+                            实践技能
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Sprint规划</li>
+                            <li>任务分解</li>
+                            <li>团队协作</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <span class="text-primary">03</span>
+                            进阶提升
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>规模化应用</li>
+                            <li>度量和优化</li>
+                            <li>最佳实践</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <span class="text-primary">04</span>
+                            专业认证
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>认证准备</li>
+                            <li>模拟测试</li>
+                            <li>经验分享</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工具展示 -->
+    <section id="tools" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">实践工具</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card bg-base-100 shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title">Sprint规划工具</h3>
+                        <p class="text-gray-600">帮助团队进行Sprint规划，包括任务分解、工作量估算等功能。</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">即将推出</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title">看板管理</h3>
+                        <p class="text-gray-600">可视化的任务管理工具，支持拖拽操作和实时更新。</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">即将推出</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社区 -->
+    <section id="community" class="py-16 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">加入社区</h2>
+            <div class="text-center max-w-2xl mx-auto">
+                <p class="text-gray-600 mb-8">
+                    加入我们的专业社区，与其他Scrum实践者交流经验，分享心得，解决问题。
+                </p>
+                <button class="btn btn-primary">即将开放</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">关于我们</h2>
+            <div class="text-center max-w-2xl mx-auto">
+                <p class="text-gray-600">
+                    我们致力于为个人和团队提供最好的Scrum学习和实践平台，
+                    帮助更多的团队成功实施敏捷开发方法。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer footer-center p-10 bg-primary text-primary-content">
+        <div>
+            <p>Copyright © 2024 - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 
