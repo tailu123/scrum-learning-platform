@@ -3,4 +3,6 @@ uvicorn
 jinja2
 python-multipart
 aiofiles
-termcolor 
+termcolor
+starlette
+python-dotenv 
